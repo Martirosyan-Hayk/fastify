@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "e2e/**/*.ts"
+  ],
+  "compilerOptions": {
+    "typeRoots": [
+      "node_modules/@types",
+      "./typings"
+    ],
+    "types": ["jest", "node"]
+  }
+}

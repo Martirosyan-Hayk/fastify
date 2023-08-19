@@ -1,0 +1,19 @@
+{
+    "private": true,
+    "workspaces": [
+        "common-crm",
+        "api-gateway",
+        "auth-service"
+    ],
+    "scripts": {
+        "api-gateway": "yarn workspace api-gateway",
+        "auth-service": "yarn workspace auth-service",
+        "common-crm": "yarn workspace common-crm",
+        "install-all": "yarn workspaces foreach -pvt run install",
+        "build-all": "yarn workspaces foreach -pvt run build"
+    },
+    "packageManager": "yarn@3.4.1",
+    "dependencies": {
+        "common-crm": "workspace:common-crm"
+    }
+}

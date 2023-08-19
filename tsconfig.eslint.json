@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "api-gateway/**/*",
+    "auth-service/**/*",
+    "common-crm/**/*",
+    "*.{ts,js}",
+  ],
+  "exclude": [
+    "node_modules",
+    "scripts"
+  ]
+}
